@@ -1,0 +1,30 @@
+<div class="bag-page-container">
+  <div class="bag-total">
+    <h3>סכום כולל: {{ getTotal() | dollars }} ש"ח</h3>
+    <button class="btn btn-primary">מעבר לתשלום</button>
+  </div>
+
+  <div class="bag-list">
+    <div *ngFor="let product of bagItems; let i = index" class="bag_product">
+      <img [src]="product.picture" alt="{{ product.name }}" />
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.price | dollars }} ש"ח</p>
+      <div class="btns-container">
+        <button class="btn-custom" (click)="removeItemFromBag(i)">הסר</button>
+        <button class="btn-custom" (click)="add(product)">הוסף</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+

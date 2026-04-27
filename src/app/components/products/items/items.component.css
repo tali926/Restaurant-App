@@ -1,0 +1,25 @@
+.product-card {
+  width: 100%;
+  max-width: 300px;   /* מגביל את הכרטיס */
+       /* גובה אחיד לכל הכרטיס */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* התוכן מתחיל מלמעלה */
+  padding: 1rem;
+  
+ 
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.product-image {
+  width: 90%;
+  height: 300px;      /* תמונה אחידה */
+  object-fit: cover;
+
+  margin-bottom: 0.5rem;
+}
+.product-price{
+    font-weight: bold;
+}

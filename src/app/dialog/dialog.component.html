@@ -1,0 +1,8 @@
+
+
+<div class="dialog-container">
+  <h2 class="dialog-product-name">{{ data.name }}</h2>
+  <p class="dialog-price">מחיר: {{ data.price | dollars }} ש"ח</p>
+  <img [src]="data.picture" alt="{{ data.name }}" class="dialog-image">
+  <button class="dialog-add-to-cart" (click)="addToBag()">הוספה לסל</button>
+</div>

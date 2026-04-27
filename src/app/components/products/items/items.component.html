@@ -1,0 +1,17 @@
+<div class="product-card" (click)="onClick()">
+
+  <h2 class="product-name">{{ product.name }}</h2>
+  <p class="product-price">{{ product.price }} ש"ח</p>
+
+  <img
+    [src]="product.picture"
+    alt="{{ product.name }}"
+    class="product-image" />
+
+  <p>{{ product.description }}</p>
+
+  <p [ngStyle]="{ color: product.department | departmentColor }">
+    {{ product.department }}
+  </p>
+
+</div>
